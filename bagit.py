@@ -76,7 +76,7 @@ if sys.version_info[0] >= 3:
 
 
 def make_bag(bag_dir, bag_info=None, processes=1, checksum=None,
-             move_payload=True):
+             move_payload=True, dest=None):
     """
     Convert a given directory into a bag. You can pass in arbitrary
     key/value pairs to put into the bag-info.txt metadata file as
@@ -942,6 +942,8 @@ def _make_parser():
                       help='Generate SHA-512 manifest when creating a bag')
     parser.add_argument('--no-move-payload', action='store_false', dest='move_payload',
                       help='Do not move the payload in a subdirectory of the bag directory, assume the payload directory to be already set up')
+    parser.add_argument('--dest', type=str, dest='dest', default='./data',
+                        help='Destination directory for network transfer')
 
     for header in STANDARD_BAG_INFO_HEADERS:
         parser.add_argument('--%s' % header.lower(), type=str,

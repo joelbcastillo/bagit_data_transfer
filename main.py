@@ -47,7 +47,7 @@ class BagItGUI(tk.Frame):
         entries = self._make_bagit_form(self.bagit_form_fields)
         self.bind('<Return>', (lambda event, e=entries: self._fetch_bagit_entries(e)))
 
-        button_one = tk.Button(self, text='Show', command=(lambda e=entries: self._fetch_bagit_entries(e)))
+        button_one = tk.Button(self, text='Make Bag', command=(lambda e=entries: self._make_bag(e)))
         button_one.pack(side=tk.LEFT, padx=5, pady=5)
 
         button_three = tk.Button(self, text='Quit', command=self.quit)
@@ -73,13 +73,36 @@ class BagItGUI(tk.Frame):
                 entry = tk.Entry(row)
                 label.pack(side=tk.LEFT)
             row.pack(side=tk.TOP, fill=tk.X, padx=5, pady=5)
-            label.pack(side=tk.LEFT)
             entry.pack(side=tk.RIGHT, expand=tk.YES, fill=tk.X)
             entries.append((field, entry))
         return entries
 
     def ask_open_directory(self):
+        """
+        Set the directory that needs to be bagged.
+        """
         self.dir_name = askdirectory(title='Choose the directory to bag...')
+
+    def _get_bag_attributes(self, entries):
+        """
+        Create a dictionary of bag entries.
+        :param entries: List of two-tuples
+        :return: Dictionary of bag entries.
+        """
+        bag_attributes = dict(entries)
+
+        for key, value in bag_attributes.items():
+            if key == 'Directory':
+                bag_attributes[key] = self.dir_name
+            else:
+                bag_attributes[key] = value.get()
+
+        return bag_attributes
+
+    def _make_bag(self, entries):
+        bag_attributes = self._get_bag_attributes(entries)
+
+
 
 
 def main():
