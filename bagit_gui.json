@@ -1,0 +1,229 @@
+{
+  "LabelFrame": [
+    {
+      "text": "BagIt",
+      "borderwidth": 2,
+      "relief": "groove",
+      "column": 0,
+      "columnspan": 3,
+      "row": 0,
+      "colweight": 1,
+      "Label": [
+        {
+          "text": "Source Organization:",
+          "column": 0,
+          "row": 0
+        },
+        {
+          "text": "Organization Address:",
+          "column": 0,
+          "row": 1
+        },
+        {
+          "text": "Contact Name:",
+          "column": 0,
+          "row": 2
+        },
+        {
+          "text": "Contact-Phone:",
+          "column": 0,
+          "row": 3
+        },
+        {
+          "text": "Contact-Email:",
+          "column": 0,
+          "row": 4
+        },
+        {
+          "text": "External Description:",
+          "column": 0,
+          "row": 5
+        },
+        {
+          "text": "External Identifier:",
+          "column": 0,
+          "row": 6
+        },
+        {
+          "text": "Bag Size",
+          "column": 0,
+          "row": 7
+        },
+        {
+          "text": "Bag Group Identifier:",
+          "column": 0,
+          "row": 8
+        },
+        {
+          "text": "Bag Count:",
+          "column": 0,
+          "row": 9
+        },
+        {
+          "text": "Internal Sender Identifier:",
+          "column": 0,
+          "row": 10
+        },
+        {
+          "text": "Internal Sender Description:",
+          "column": 0,
+          "row": 11
+        },
+        {
+          "text": "BagIt Profile Identifier",
+          "oolumn": 0,
+          "row": 12
+        },
+        {
+          "text": "No directory selected",
+          "name": "source_dir_path",
+          "column": 1,
+          "row": 13
+        },
+        {
+          "text": "No directory selected",
+          "name": "destination_dir_path",
+          "column": 1,
+          "row": 14
+        },
+        {
+          "text": " ",
+          "column": 0,
+          "row": 15
+        }
+      ],
+      "Entry": [
+        {
+          "name": "source_organization",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 0,
+          "colweight": 1
+        },
+        {
+          "name": "organization_address",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 1,
+          "colweight": 1
+        },
+        {
+          "name": "contact_name",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 2,
+          "colweight": 1
+        },
+        {
+          "name": "contact_phone",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 3,
+          "colweight": 1
+        },
+        {
+          "name": "contact_email",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 4,
+          "colweight": 1
+        },
+        {
+          "name": "external_description",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 5,
+          "colweight": 1
+        },
+        {
+          "name": "external_identifier",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 6,
+          "colweight": 1
+        },
+        {
+          "name": "bag_size",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 7,
+          "colweight": 1
+        },
+        {
+          "name": "bag_group_identifier",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 8,
+          "colweight": 1
+        },
+        {
+          "name": "bag_count",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 9,
+          "colweight": 1
+        },
+        {
+          "name": "internal_sender_identifier",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 10,
+          "colweight": 1
+        },
+        {
+          "name": "internal_sender_description",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 11,
+          "colweight": 1
+        },
+        {
+          "name": "bagit_profile_identifier",
+          "bg": "white",
+          "width": 20,
+          "column": 1,
+          "row": 12,
+          "colweight": 1
+        }
+      ],
+      "Button": [
+        {
+          "name": "source_directory",
+          "text": "Source Directory",
+          "column": 0,
+          "row": 13
+        },
+        {
+          "name": "destination_directory",
+          "text": "Destination Directory",
+          "column": 0,
+          "row": 14
+        },
+        {
+          "name": "bagit",
+          "text": "BagIt",
+          "column": 0,
+          "row": 16
+        },
+        {
+          "name": "exit",
+          "text": "Exit",
+          "column": 1,
+          "row": 16
+        }
+      ]
+    }
+  ]
+}
